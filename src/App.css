@@ -1,0 +1,38 @@
+body {
+  background: #fcfbfe;
+}
+
+@keyframes rotateAnim {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes cometAnim {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(1500px,-910px);
+  }
+  51% {
+    transform: translate(-1500px, 910px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+
+
+@keyframes rotateAnimHours {
+  0% {
+    transform: rotateZ(-45deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}

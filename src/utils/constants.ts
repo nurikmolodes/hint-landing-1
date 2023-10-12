@@ -19,8 +19,10 @@ export const Scanner = "/scanner";
 export const Email = "/email";
 export const ChoosePrice = "/choose-price";
 export const PayWall = "/paywall";
+export const Name = "/name";
 
 export enum localStorageItems {
+  NAME = "NAME",
   CITY_OF_BIRTH = "CITY_OF_BIRTH",
   DATE_OF_BIRTH = "DATE_OF_BIRTH",
   TIME_OF_BIRTH = "TIME_OF_BIRTH",

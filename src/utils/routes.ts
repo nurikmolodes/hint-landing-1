@@ -1,19 +1,26 @@
 import EnterPage from "../Pages/enterPage/EnterPage";
 import {
-    PersonalizedHoroscope,
-    Gender,
-    DateOfBirth,
-    DoYouKnowTimeOfBirth,
-    SetYourTimeOfBirth,
-    DontKnowTimeOfBirth,
-    CityOfBirth,
-    HaveYouUsedAstrologyBefore,
-    HintIsDifferent,
-    HintIntro,
-    RelationshipStatus,
-    PartnerDateOfBirth,
-    PartnerTimeOfBirthQuestion,
-    PartnerDontKnowTimeOfBirth, PartnerTimeOfBirth, PartnerPlaceOfBirth, Scanner, Email, ChoosePrice, PayWall,
+  PersonalizedHoroscope,
+  Name,
+  Gender,
+  DateOfBirth,
+  DoYouKnowTimeOfBirth,
+  SetYourTimeOfBirth,
+  DontKnowTimeOfBirth,
+  CityOfBirth,
+  HaveYouUsedAstrologyBefore,
+  HintIsDifferent,
+  HintIntro,
+  RelationshipStatus,
+  PartnerDateOfBirth,
+  PartnerTimeOfBirthQuestion,
+  PartnerDontKnowTimeOfBirth,
+  PartnerTimeOfBirth,
+  PartnerPlaceOfBirth,
+  Scanner,
+  Email,
+  ChoosePrice,
+  PayWall,
 } from "./constants";
 import GenderPage from "../Pages/genderPage/GenderPage";
 import DateOfBirthPage from "../Pages/DateOfBirth/DateOfBirth";
@@ -34,90 +41,95 @@ import ScannerPage from "../Pages/Scanner/Scanner";
 import EmailPage from "../Pages/Email/Email";
 import PaymentPage from "../Pages/Payment/PaymentPage";
 import PaywallPage from "../Pages/Paywall/PaywallPage";
+import NamePage from "../Pages/Name/Name";
 
 export const publicRoutes = [
-    // {
-    //     path: Login_Route,
-    //     Component: LoginPage
-    // },
-    {
-        path: PersonalizedHoroscope,
-        Component: EnterPage
-    },
-    {
-        path: Gender,
-        Component: GenderPage
-    },
-    {
-        path: DateOfBirth,
-        Component: DateOfBirthPage
-    },
-    {
-        path: DoYouKnowTimeOfBirth,
-        Component: DoYouKnowTimeOfBirthPage
-    },
-    {
-        path: SetYourTimeOfBirth,
-        Component: SetYourTimeOfBirthPage
-    },
-    {
-        path: DontKnowTimeOfBirth,
-        Component: DontKnowTimeOfBirthPage
-    },
-    {
-        path: CityOfBirth,
-        Component: CityOfBirthPage
-    },
-    {
-        path: HaveYouUsedAstrologyBefore,
-        Component: HaveYouUsedAstrologyBeforePage
-    },
-    {
-        path: HintIsDifferent,
-        Component: HintIsDifferentPage
-    },
-    {
-        path: HintIntro,
-        Component: HintIntroPage
-    },
-    {
-        path: RelationshipStatus,
-        Component: RelationshipStatusPage
-    },
-    {
-        path: PartnerDateOfBirth,
-        Component: PartnerDateOfBirthPage
-    },
-    {
-        path: PartnerTimeOfBirthQuestion,
-        Component: PartnerTimeOfBirthQuestionPage
-    },
-    {
-        path: PartnerDontKnowTimeOfBirth,
-        Component: DontKnowTimeOfBirthParther
-    },
-    {
-        path: PartnerTimeOfBirth,
-        Component: SetPartnerTimeOfBirthPage
-    },
-    {
-        path: PartnerPlaceOfBirth,
-        Component: PartnerCityOfBirthPage
-    },
-    {
-        path: Scanner,
-        Component: ScannerPage
-    },
-    {
-        path: Email,
-        Component: EmailPage
-    },
-    {
-        path: ChoosePrice,
-        Component: PaymentPage
-    },
-    {
-        path: PayWall,
-        Component: PaywallPage
-    },
+  // {
+  //     path: Login_Route,
+  //     Component: LoginPage
+  // },
+  {
+    path: PersonalizedHoroscope,
+    Component: EnterPage,
+  },
+  {
+    path: Name,
+    Component: NamePage,
+  },
+  {
+    path: Gender,
+    Component: GenderPage,
+  },
+  {
+    path: DateOfBirth,
+    Component: DateOfBirthPage,
+  },
+  {
+    path: DoYouKnowTimeOfBirth,
+    Component: DoYouKnowTimeOfBirthPage,
+  },
+  {
+    path: SetYourTimeOfBirth,
+    Component: SetYourTimeOfBirthPage,
+  },
+  {
+    path: DontKnowTimeOfBirth,
+    Component: DontKnowTimeOfBirthPage,
+  },
+  {
+    path: CityOfBirth,
+    Component: CityOfBirthPage,
+  },
+  {
+    path: HaveYouUsedAstrologyBefore,
+    Component: HaveYouUsedAstrologyBeforePage,
+  },
+  {
+    path: HintIsDifferent,
+    Component: HintIsDifferentPage,
+  },
+  {
+    path: HintIntro,
+    Component: HintIntroPage,
+  },
+  {
+    path: RelationshipStatus,
+    Component: RelationshipStatusPage,
+  },
+  {
+    path: PartnerDateOfBirth,
+    Component: PartnerDateOfBirthPage,
+  },
+  {
+    path: PartnerTimeOfBirthQuestion,
+    Component: PartnerTimeOfBirthQuestionPage,
+  },
+  {
+    path: PartnerDontKnowTimeOfBirth,
+    Component: DontKnowTimeOfBirthParther,
+  },
+  {
+    path: PartnerTimeOfBirth,
+    Component: SetPartnerTimeOfBirthPage,
+  },
+  {
+    path: PartnerPlaceOfBirth,
+    Component: PartnerCityOfBirthPage,
+  },
+  {
+    path: Scanner,
+    Component: ScannerPage,
+  },
+  {
+    path: Email,
+    Component: EmailPage,
+  },
+  {
+    path: ChoosePrice,
+    Component: PaymentPage,
+  },
+  {
+    path: PayWall,
+    Component: PaywallPage,
+  },
 ];

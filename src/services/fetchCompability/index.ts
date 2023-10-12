@@ -6,7 +6,7 @@ export const fetchCompability = async () => {
   if (local) {
     const storageData = JSON.parse(local);
     const body = {
-      name: "Unknown",
+      name: storageData[localStorageItems.NAME],
       email: storageData[localStorageItems.EMAIL],
       gender: storageData[localStorageItems.GENDER],
       dateOfBirth: storageData[localStorageItems.DATE_OF_BIRTH],

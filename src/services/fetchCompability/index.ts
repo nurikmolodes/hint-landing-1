@@ -21,9 +21,11 @@ export const fetchCompability = async () => {
         },
       });
       window.location.replace("https://astrology-one.vercel.app");
-      console.log(data);
+      console.log(data.data);
+      return data.data;
     } catch (e) {
       console.error(e);
+      return e;
     }
   }
 };

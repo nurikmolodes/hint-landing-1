@@ -11,7 +11,7 @@ function App() {
 
   useEffect(() => {
     setLoc(window.location.href.includes(PayWall));
-  }, []);
+  }, [window.location.href]);
   return (
     <BrowserRouter>
       {!loc ? <Header /> : null}

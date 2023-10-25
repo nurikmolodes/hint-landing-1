@@ -9,5 +9,9 @@
     font-size: 28px;
     max-width: 800px;
     text-align: center;
+    width: 400px;
+    @media(max-width: 720px) {
+      width: 300px;
+    }
   }
 }

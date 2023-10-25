@@ -54,7 +54,7 @@
   .custom-input {
     &__input {
       width: 400px;
-      @media(max-width: 720px) {
+      @media (max-width: 720px) {
         width: 300px;
       }
     }
@@ -75,5 +75,9 @@
     letter-spacing: normal;
     text-transform: unset;
     margin: 0;
+    width: 400px;
+    @media (max-width: 720px) {
+      width: 300px;
+    }
   }
 }

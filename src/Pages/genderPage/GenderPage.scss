@@ -8,6 +8,11 @@
   &__title {
     font-size: 28px;
     padding: 0 10px;
+    width: 400px;
+    text-align: center;
+    @media (max-width: 720px) {
+      width: 300px;
+    }
   }
 
   &__container {
@@ -16,7 +21,7 @@
     align-items: center;
     flex-direction: row;
     gap: 5px;
-    @media(max-width: 720px) {
+    @media (max-width: 720px) {
       flex-direction: column;
     }
   }

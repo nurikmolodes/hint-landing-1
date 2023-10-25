@@ -16,6 +16,11 @@
     display: flex;
     width: 400px;
     flex-direction: row;
+    @media (max-width: 480px) {
+      width: 300px;
+      position: relative;
+      right: 10px;
+    }
 
     .button {
       justify-content: space-between;

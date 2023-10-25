@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'Alata';
-  src: url('../../assets/fonts/alata/Alata-Regular.ttf');
+  font-family: "Alata";
+  src: url("../../assets/fonts/alata/Alata-Regular.ttf");
 }
 
 .enter-page {
@@ -14,6 +14,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
   }
 
   &__image-container {
@@ -21,6 +22,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @media(max-width: 400px) {
+      width: 300px;
+    }
   }
 
   &__gif {
@@ -31,6 +35,9 @@
   &__title {
     font-family: Alata, serif;
     font-size: 28px;
+    @media (max-width: 400px) {
+      font-size: 25px;
+    }
   }
 
   &__rich-text {
@@ -45,8 +52,12 @@
   &__text {
     text-align: center;
     width: 80%;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     line-height: 1.35;
     font-weight: 400;
+  }
+  .button {
+    margin-top: 25px;
+    margin-bottom: 25px;
   }
 }

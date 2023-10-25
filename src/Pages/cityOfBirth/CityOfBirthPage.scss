@@ -4,7 +4,6 @@
   align-items: center;
   flex-direction: column;
   padding-top: 30px;
-  width: 800px;
   margin: auto;
 
   &__input-container {
@@ -55,6 +54,9 @@
   .custom-input {
     &__input {
       width: 400px;
+      @media(max-width: 720px) {
+        width: 300px;
+      }
     }
   }
 

@@ -4,13 +4,13 @@
   align-items: center;
   flex-direction: column;
   padding-top: 30px;
-  width: 800px;
   margin: auto;
 
   &__title {
     font-size: 24px;
     text-align: center;
     font-weight: 300;
+    padding: 0 10px;
   }
 
   &__image {
@@ -36,6 +36,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @media(max-width: 720px) {
+      max-width: 300px;
+    }
   }
 
   &__progress-number {

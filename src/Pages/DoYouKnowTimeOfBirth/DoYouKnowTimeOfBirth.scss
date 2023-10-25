@@ -4,8 +4,15 @@
   align-items: center;
   flex-direction: column;
   padding-top: 30px;
+  text-align: center;
 
   &__title {
     font-size: 28px;
+    @media(max-width: 720px) {
+      font-size: 25px;
+      width: 300px;
+      position: relative;
+      right: 3px;
+    }
   }
 }

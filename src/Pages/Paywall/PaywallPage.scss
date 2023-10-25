@@ -4,7 +4,15 @@
   align-items: center;
   flex-direction: column;
   width: 100%;
-
+  overflow-x: hidden;
+  text-align: center;
+  h4 {
+    margin: 0 !important;
+  }
+  .rich-text {
+    text-align: left;
+  }
+  
   &__present-trial {
     height: 76px;
     display: flex;
@@ -12,6 +20,9 @@
     justify-content: center;
     align-items: center;
     background-color: #066fde;
+    h1 {
+      padding-left: 10px;
+    }
   }
 
   h4 {
@@ -19,7 +30,7 @@
     font-weight: 400;
     max-width: 760px;
     width: 100%;
-    line-height: 1.35;
+    // line-height: 1.35;
     color: #505051;
   }
 
@@ -38,6 +49,12 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    padding: 10px;
+    h5 {
+      padding: 0 10px;
+      margin: 0;
+      margin-top: 5px;
+    }
   }
 
   &__presentation-title {
@@ -54,6 +71,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    padding: 0 10px;
   }
 
   &__description-title {
@@ -67,7 +85,7 @@
     font-size: 21px;
     color: #505051;
     font-weight: 400;
-    line-height: 1.35;
+    // line-height: 1.35;
     letter-spacing: normal;
     text-transform: unset;
     margin: 0;
@@ -75,6 +93,7 @@
 
   &__featured-image {
     width: 100%;
+    margin-top: 10px;
   }
 
   &__button {
@@ -130,12 +149,10 @@
     max-width: 800px;
     font-weight: 500;
     width: 100%;
-
   }
 
   &__header {
     display: flex;
-    width: 780px;
     flex-direction: row;
     justify-content: flex-end;
     height: 70px;
@@ -144,6 +161,5 @@
 
   &__header-email {
     font-size: 18px;
-
   }
 }

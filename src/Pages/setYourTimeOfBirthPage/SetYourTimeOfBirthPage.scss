@@ -5,6 +5,9 @@
   padding-top: 30px;
   width: 400px;
   margin: auto;
+  @media(max-width: 720px) {
+    width: 300px;
+  }
 
   &__time-container {
     width: 100px;

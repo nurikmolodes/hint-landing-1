@@ -28,7 +28,7 @@ const ScannerPage = () => {
   return (
     <div className={'scanner'}>
       <p className={'scanner__title'}>
-        Hint has provided essential compatibility insight into over 544 930* other Capricorn and @their_zodiac connections.
+        Hint has provided essential compatibility insight into over 544 930* other Capricorn and Virgo connections.
       </p>
       <div className={'scanner__image'}>
         <Scanner />

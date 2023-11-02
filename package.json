@@ -12,6 +12,7 @@
     "@types/react-redux": "^7.1.25",
     "@types/react-router-dom": "^5.1.8",
     "axios": "^1.4.0",
+    "framer-motion": "^10.16.4",
     "node-sass": "^9.0.0",
     "random-hash": "^4.0.1",
     "react": "^18.2.0",

@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 
-import './Button.scss';
-import {ArrowLink} from "../../assets/images/iconPack";
+import "./Button.scss";
+import { ArrowLink } from "../../assets/images/iconPack";
 
 interface OwnProps {
   title: string;
@@ -9,19 +9,21 @@ interface OwnProps {
   disabled?: boolean;
 }
 
-const Button = ({title, onClick, disabled = false}: OwnProps) => {
+const Button = ({ title, onClick, disabled = false }: OwnProps) => {
   const click = () => {
     if (!disabled) {
       onClick();
     }
-  }
+  };
 
   return (
-    <div className={`button ${disabled ? 'button__disabled' : 'button__enabled'}`} onClick={click}>
-      <div className={'button__title'}>
-        {title}
+    <div className="cover">
+      <div
+        className={`button ${disabled ? "button__disabled" : "button__enabled"}`}
+        onClick={click}>
+        <div className={"button__title"}>{title}</div>
+        <ArrowLink />
       </div>
-      <ArrowLink />
     </div>
   );
 };

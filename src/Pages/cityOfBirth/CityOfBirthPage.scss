@@ -3,12 +3,14 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-top: 30px;
+  padding: 0 15px;
   margin: auto;
+  max-width: 540px;
 
   &__input-container {
     margin: 30px 0;
     position: relative;
+    width: 100%;
   }
 
   &__popup {
@@ -53,10 +55,7 @@
 
   .custom-input {
     &__input {
-      width: 400px;
-      @media (max-width: 720px) {
-        width: 300px;
-      }
+      width: 100%;
     }
   }
 

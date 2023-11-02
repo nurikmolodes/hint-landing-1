@@ -3,7 +3,8 @@
   justify-content: center;
   flex-direction: column;
   padding-top: 30px;
-  width: 400px;
+  max-width: 540px;
+  width: 100%;
   margin: auto;
 
   &__time-container {

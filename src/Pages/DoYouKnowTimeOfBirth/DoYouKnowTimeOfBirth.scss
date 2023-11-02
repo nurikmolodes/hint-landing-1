@@ -5,10 +5,14 @@
   flex-direction: column;
   padding-top: 30px;
   text-align: center;
+  max-width: 540px;
+  margin: auto;
+  padding: 0 15px;
+  margin-top: 30px;
 
   &__title {
     font-size: 28px;
-    @media(max-width: 720px) {
+    @media (max-width: 720px) {
       font-size: 25px;
       width: 300px;
       position: relative;

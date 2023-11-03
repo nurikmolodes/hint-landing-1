@@ -45,6 +45,7 @@
     padding-left: 15px;
     padding-right: 15px;
     margin-right: 10px;
+    cursor: pointer;
 
     &_active {
       color: #fff;
@@ -65,7 +66,6 @@
     padding: 0 10px;
 
     &_blue {
-      color: #066fde;
       padding: 0 10px;
     }
   }
@@ -76,6 +76,9 @@
     color: #505051;
     font-weight: 300;
     padding: 0 10px;
+  }
+  .blued {
+    color: #066fde;
   }
 }
 

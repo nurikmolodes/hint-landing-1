@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import GoBack from "../goBack/GoBack";
 import CustomInput from "../input/CustomInput";
 import Button from "../Button/Button";
@@ -23,12 +23,15 @@ const TimeOfBirth = ({
   title: string;
 }) => {
   const disabledButton = !hour || !minutes || !timeFormat;
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className={"set-your-time-of-birth"}>
       <GoBack />
       <h1 className={"set-your-time-of-birth__title"}>{title}</h1>
-      <div style={{ display: 'flex', justifyContent: 'center' }}>
+      <div style={{ display: "flex", justifyContent: "center" }}>
         <div className={"set-your-time-of-birth__input-container"}>
           <CustomInput data={hour} setData={changeHour} placeholder={"HH"} />
           <CustomInput data={minutes} setData={changeMinutes} placeholder={"MM"} />

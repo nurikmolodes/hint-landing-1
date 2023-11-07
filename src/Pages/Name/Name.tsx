@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import GoBack from "../../components/goBack/GoBack";
 import Button from "../../components/Button/Button";
 import { useHistory } from "react-router-dom";
@@ -8,6 +8,9 @@ import { Gender, localStorageItems } from "../../utils/constants";
 import { pushToLocalStorage } from "../../utils/functions";
 
 const Name = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const [city, setCity] = useState("");
   const [cities, setCities] = useState([]);
 
@@ -27,9 +30,7 @@ const Name = () => {
     <div className={"city-of-birth"}>
       <GoBack />
       <h1 className={"city-of-birth__title"}>What is your name?</h1>
-      <h4 className={"city-of-birth__desc"}>
-        Just type your name
-      </h4>
+      <h4 className={"city-of-birth__desc"}>Just type your name</h4>
       <div className={"city-of-birth__input-container"}>
         <CustomInput data={city} setData={changeCity} placeholder={"Name"} />
         <div

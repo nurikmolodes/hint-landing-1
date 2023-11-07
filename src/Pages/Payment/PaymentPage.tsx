@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Payment.scss";
 import Button from "../../components/Button/Button";
 import { useHistory } from "react-router-dom";
@@ -11,6 +11,9 @@ const PaymentPage = () => {
   const click = () => {
     history.push(PayWall);
   };
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className={"payment"}>

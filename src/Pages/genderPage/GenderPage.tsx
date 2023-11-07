@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import "./GenderPage.scss";
 import { Female, Male } from "../../assets/images/iconPack";
@@ -18,6 +18,9 @@ const GenderPage = () => {
     pushToLocalStorage({ value: data, itemName: localStorageItems.GENDER });
     history.push(DateOfBirth);
   };
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className={"gender"}>
       <GoBack />

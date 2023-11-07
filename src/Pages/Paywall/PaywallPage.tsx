@@ -73,6 +73,9 @@ const PaywallPage = () => {
       window.location.replace("https://astrology-one.vercel.app");
     }, 3000);
   };
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className={"paywall"}>

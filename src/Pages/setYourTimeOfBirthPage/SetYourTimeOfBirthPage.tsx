@@ -1,23 +1,23 @@
-import React, {useState} from 'react';
-import './SetYourTimeOfBirthPage.scss';
-import {useHistory} from "react-router-dom";
-import {CityOfBirth, localStorageItems} from "../../utils/constants";
+import React, { useEffect, useState } from "react";
+import "./SetYourTimeOfBirthPage.scss";
+import { useHistory } from "react-router-dom";
+import { CityOfBirth, localStorageItems } from "../../utils/constants";
 import TimeOfBirth from "../../components/TimeOfBirthComponent/TimeOfBirth";
-import {pushToLocalStorage} from "../../utils/functions";
+import { pushToLocalStorage } from "../../utils/functions";
 
 const SetYourTimeOfBirthPage = () => {
-  const [hour, setHour] = useState<number | string>('');
-  const [minutes, setMinutes] = useState<number | string>('');
-  const [timeFormat, setTimeFormat] = useState<'AM' | 'PM' | ''>('');
+  const [hour, setHour] = useState<number | string>("");
+  const [minutes, setMinutes] = useState<number | string>("");
+  const [timeFormat, setTimeFormat] = useState<"AM" | "PM" | "">("");
   const history = useHistory();
 
   const click = () => {
     const h = parseInt(`${hour}`);
-    const m = minutes >= 10 ? minutes : `0${minutes}`
-    const data = `${timeFormat === 'AM' ? h : h + 12}:${m}`;
-    pushToLocalStorage({value: data, itemName: localStorageItems.TIME_OF_BIRTH});
+    const m = minutes >= 10 ? minutes : `0${minutes}`;
+    const data = `${timeFormat === "AM" ? h : h + 12}:${m}`;
+    pushToLocalStorage({ value: data, itemName: localStorageItems.TIME_OF_BIRTH });
     history.push(CityOfBirth);
-  }
+  };
 
   const changeHour = (value: string) => {
     const newValue = parseInt(value);
@@ -25,9 +25,9 @@ const SetYourTimeOfBirthPage = () => {
       setHour(parseInt(value));
     }
     if (value.length === 0) {
-      setHour('');
+      setHour("");
     }
-  }
+  };
 
   const changeMinutes = (value: string) => {
     const newValue = parseInt(value);
@@ -36,9 +36,12 @@ const SetYourTimeOfBirthPage = () => {
       setMinutes(parseInt(value));
     }
     if (value.length === 0) {
-      setMinutes('');
+      setMinutes("");
     }
-  }
+  };
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <TimeOfBirth
       hour={hour}
@@ -48,7 +51,7 @@ const SetYourTimeOfBirthPage = () => {
       setTimeFormat={setTimeFormat}
       timeFormat={timeFormat}
       click={click}
-      title={'What time were you born?'}
+      title={"What time were you born?"}
     />
   );
 };

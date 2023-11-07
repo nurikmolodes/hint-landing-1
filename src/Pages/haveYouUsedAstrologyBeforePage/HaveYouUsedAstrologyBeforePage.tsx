@@ -1,31 +1,34 @@
-import React, {useState} from 'react';
-import './HaveYouUsedAstrologyBeforePage.scss';
+import React, { useEffect, useState } from "react";
+import "./HaveYouUsedAstrologyBeforePage.scss";
 import GoBack from "../../components/goBack/GoBack";
 import YesNoSelector from "../../components/YesNoSelector/YesNoSelector";
-import {HintIsDifferent} from "../../utils/constants";
-import {useHistory} from "react-router-dom";
+import { HintIsDifferent } from "../../utils/constants";
+import { useHistory } from "react-router-dom";
 
 const HaveYouUsedAstrologyBeforePage = () => {
   const history = useHistory();
 
-  const [active, setActive] = useState<'Yes' | 'No' | null>(null);
+  const [active, setActive] = useState<"Yes" | "No" | null>(null);
 
-  const change = (data: 'Yes' | 'No') => {
+  const change = (data: "Yes" | "No") => {
     setActive(data);
-    if (data === 'Yes') {
-      history.push(HintIsDifferent)
+    if (data === "Yes") {
+      history.push(HintIsDifferent);
     }
-    if (data === 'No') {
-      history.push(HintIsDifferent)
+    if (data === "No") {
+      history.push(HintIsDifferent);
     }
-  }
+  };
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
-    <div className={'have-you-used-astrology-before'}>
+    <div className={"have-you-used-astrology-before"}>
       <GoBack />
-      <h1 className={'have-you-used-astrology-before__title'}>
+      <h1 className={"have-you-used-astrology-before__title"}>
         Have you used other services to get insights into your love compatibility before?
       </h1>
-      <YesNoSelector active={active} change={change}/>
+      <YesNoSelector active={active} change={change} />
     </div>
   );
 };

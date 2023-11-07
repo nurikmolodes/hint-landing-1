@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useHistory } from "react-router-dom";
 
 import Button from "../../components/Button/Button";
@@ -11,6 +11,9 @@ import "./EnterPage.scss";
 
 const EnterPage = () => {
   const history = useHistory();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className={"enter-page"}>

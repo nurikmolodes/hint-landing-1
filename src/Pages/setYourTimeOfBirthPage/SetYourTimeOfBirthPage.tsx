@@ -8,7 +8,9 @@ import { pushToLocalStorage } from "../../utils/functions";
 const SetYourTimeOfBirthPage = () => {
   const [hour, setHour] = useState<number | string>("");
   const [minutes, setMinutes] = useState<number | string>("");
-  const [timeFormat, setTimeFormat] = useState<"AM" | "PM" | "">("");
+  const [timeFormat, setTimeFormat] = useState<"AM" | "PM" | "">("AM");
+  console.log(timeFormat);
+
   const history = useHistory();
 
   const click = () => {

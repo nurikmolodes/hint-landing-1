@@ -70,7 +70,7 @@ const PaywallPage = () => {
     const data = await fetchCompability();
     setData(data);
     setTimeout(() => {
-      window.location.replace("https://astrology-one.vercel.app");
+      window.location.replace("https://astropulse.app");
     }, 3000);
   };
   useEffect(() => {

@@ -20,7 +20,7 @@ export const fetchCompability = async () => {
           "Content-Type": "application/x-www-form-urlencoded",
         },
       });
-      window.location.replace("https://astrology-one.vercel.app");
+      window.location.replace("https://astropulse.app");
       console.log(data.data);
       return data.data;
     } catch (e) {
